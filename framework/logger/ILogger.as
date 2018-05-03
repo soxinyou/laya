@@ -5,7 +5,7 @@ package com.framework.logger
 	 * @author nos(liupengpeng)
 	 * 
 	 */	
-	public interface ILoggerTarget
+	public interface ILogger
 	{
 		/**显示对象的信息等级*/
 		function get showLevel():int;

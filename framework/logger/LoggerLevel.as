@@ -12,16 +12,20 @@ package com.framework.logger
 		 */		
 		public static const ALL:int=0;
 		/**
-		 * 打印调试，等级：1
+		 * 打印普通，等级：1
+		 */	
+		public static const LOG:int=1;
+		/**
+		 * 打印调试，等级：2
 		 */		
-		public static const DEBUG:int=1;
+		public static const DEBUG:int=2;
 		/**
-		 * 打印警告，等级：2 
+		 * 打印警告，等级：3 
 		 */	
-		public static const WARN:int=2;
+		public static const WARN:int=3;
 		/**
-		 * 打印错误，等级：3
+		 * 打印错误，等级：4
 		 */	
-		public static const ERROR:int=3;
+		public static const ERROR:int=4;
 	}
 }
