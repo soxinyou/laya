@@ -192,7 +192,7 @@ package com.framework.logger
 			if(hoster is String){
 				words+=hoster;
 			}else{
-				words+=ClassUtil.getQualifiedClassName(hoster);
+				words+=getQualifiedClassName(hoster);
 			}
 			words+=":: "+msg;
 			message(words,level);
@@ -215,6 +215,23 @@ package com.framework.logger
 				}
 			}
 			message(words);
+		}
+		
+		/**
+		 * 获取类的路径全名
+		 * @param val
+		 * @return 
+		 * 
+		 */		
+		public static function getQualifiedClassName(val:*):String{
+			
+			var className:String=typeof(val);
+			if(className.toLocaleLowerCase()=="object"){
+				var proto:Object=__JS__("val.__proto__");
+				className=proto.__className;
+				return className;
+			}
+			return className;
 		}
 		
 		/**
