@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/sq_h5_login_content_width"
+              android:layout_height="@dimen/sq_h5_login_content_height"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sq_h5_sdk_goback_icon_margin"
+        android:layout_marginTop="@dimen/sq_h5_sdk_goback_icon_margin"
+        android:drawableLeft="@drawable/sq_h5_sdk_goback_icon"
+        android:drawablePadding="@dimen/sq_h5_tv_drawable_margin"
+        android:text="@string/sq_h5_sdk_go_back"
+        android:textColor="@color/sq_h5_sdk_light_gray"
+        android:textSize="@dimen/sq_h5_sdk_text_size_middle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/sq_h5_sdk_login_edittext_margin"
+        android:layout_marginRight="@dimen/sq_h5_sdk_login_edittext_margin"
+        android:orientation="horizontal">
+
+        <com.games37.h5gamessdk.view.UnderlineView
+            android:id="@+id/view_normal_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <com.games37.h5gamessdk.view.UnderlineView
+            android:id="@+id/view_normal_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_login_split"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sq_h5_split_height"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/sq_h5_sdk_login_edittext_margin"
+        android:layout_marginRight="@dimen/sq_h5_sdk_login_edittext_margin"
+        android:background="@color/sq_h5_sdk_light_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ll_normal_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sq_h5_sdk_login_edittext_margin"
+        android:layout_marginRight="@dimen/sq_h5_sdk_login_edittext_margin"
+        android:layout_marginTop="@dimen/sq_h5_sdk_goback_icon_margin"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_register_account"
+            style="@style/sq_h5_sdk_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sq_h5_sdk_edittext_view_height"
+            android:layout_marginBottom="@dimen/sq_h5_sdk_goback_icon_margin"
+            android:hint="@string/sq_h5_sdk_register_account_tips"
+            android:imeOptions="actionNext|flagNoExtractUi|flagNoFullscreen"
+            android:inputType="text">
+
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_register_pwd"
+            style="@style/sq_h5_sdk_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sq_h5_sdk_edittext_view_height"
+            android:layout_marginBottom="@dimen/sq_h5_sdk_goback_icon_margin"
+            android:hint="@string/sq_h5_sdk_register_pwd_tips"
+            android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+            android:singleLine="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/sq_h5_sdk_goback_icon_margin"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/ckb_user_agreement"
+                style="@style/sq_h5_sdk_checkbox_style"
+                android:layout_width="@dimen/sq_h5_sdk_checkbox_width_and_height"
+                android:layout_height="@dimen/sq_h5_sdk_checkbox_width_and_height"
+                android:checked="true"/>
+
+            <TextView
+                android:id="@+id/tv_agree_register_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ckb_user_agreement"
+                android:text="@string/sq_h5_sdk_agree_register_service"
+                android:textSize="@dimen/sq_h5_sdk_text_size_small"/>
+
+            <TextView
+                android:id="@+id/tv_register_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_agree_register_service"
+                android:text="@string/sq_h5_sdk_register_service"
+                android:textColor="@color/sq_h5_sdk_blue"
+                android:textSize="@dimen/sq_h5_sdk_text_size_small"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_normal_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sq_h5_sdk_goback_icon_margin"
+        android:layout_marginLeft="@dimen/sq_h5_sdk_login_edittext_margin"
+        android:layout_marginRight="@dimen/sq_h5_sdk_login_edittext_margin"
+        android:layout_marginTop="@dimen/sq_h5_sdk_goback_icon_margin"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sq_h5_sdk_edittext_view_height"
+            android:layout_marginBottom="@dimen/sq_h5_sdk_goback_icon_margin">
+
+            <EditText
+                android:id="@+id/et_login_account"
+                style="@style/sq_h5_sdk_edittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/sq_h5_sdk_pleae_enter_account"
+                android:imeOptions="actionNext|flagNoExtractUi|flagNoFullscreen"
+                android:inputType="text"/>
+
+            <ImageView
+                android:id="@+id/iv_account_list"
+                style="@style/sq_h5_sdk_account_list_view_style"/>
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/et_login_pwd"
+            style="@style/sq_h5_sdk_edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sq_h5_sdk_edittext_view_height"
+            android:layout_marginBottom="@dimen/sq_h5_sdk_goback_icon_margin"
+            android:layout_weight="1"
+            android:hint="@string/sq_h5_sdk_pleae_enter_pwd"
+            android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            >
+
+            <TextView
+                android:id="@+id/tv_forget_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="忘记密码？"
+                android:textColor="@drawable/sq_h5_sdk_selector_blue_text"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sq_h5_sdk_edittext_view_height"
+        android:layout_marginLeft="@dimen/sq_h5_sdk_login_edittext_margin"
+        android:layout_marginRight="@dimen/sq_h5_sdk_login_edittext_margin"
+        android:background="@drawable/sq_h5_sdk_selector_orange_bg"
+        android:gravity="center"
+        android:text="@string/sq_h5_sdk_register"
+        android:textColor="@color/sq_h5_sdk_withe"
+        android:textSize="@dimen/sq_h5_sdk_text_size_middle"/>
+
+    <TextView
+        android:id="@+id/tv_go_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp"
+        android:text="手机注册 >>"
+        android:textColor="@drawable/sq_h5_sdk_selector_blue_text"/>
+</LinearLayout>

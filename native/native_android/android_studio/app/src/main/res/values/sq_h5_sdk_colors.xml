@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sq_h5_sdk_light_gray">#DCDCDC</color>
+    <color name="sq_h5_sdk_text_gray_deep">#333333</color>
+    <color name="sq_h5_sdk_text_gray">#999999</color>
+    <color name="sq_h5_sdk_deep_gray">#ACB0B3</color>
+    <color name="sq_h5_sdk_orange">#FD7B23</color>
+    <color name="sq_h5_sdk_withe">#FFFFFF</color>
+    <color name="sq_h5_sdk_black">#000000</color>
+    <color name="sq_h5_sdk_blue">#FF53C3FC</color>
+    <color name="sq_h5_sdk_blue_dark">#FF179ADC</color>
+    <color name="sq_h5_sdk_red">#E73C40</color>
+</resources>
