@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:background="@drawable/sq_h5_sdk_new_pop_account_list"
+              android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lvAccountList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#a0eeeeee"
+        android:dividerHeight="1dp"
+        android:listSelector="#f3f3f3"
+        android:scrollbars="none"
+        />
+</LinearLayout>
