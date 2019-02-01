@@ -1,0 +1,6 @@
+framework module MobileGame {
+  umbrella header "MobileGame.h"
+
+  export *
+  module * { export * }
+}
