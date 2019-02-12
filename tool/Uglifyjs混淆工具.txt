@@ -1,0 +1,8 @@
+1.安装 
+需要安装node环境，然后：
+
+npm install -g uglify-js
+
+2.混淆
+
+uglifyjs download.js -c -m -o download.min.js
