@@ -63,7 +63,7 @@ public class DeviceInfoUtil {
     public static String getIMEI(Context ctx) {
         String imei=null;
         TelephonyManager telephonyManager = (TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE);
-        if (ActivityCompat.checkSelfPermission(ctx, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(ctx, Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED) {
             if(telephonyManager!=null){
                 try{
                     imei=telephonyManager.getDeviceId();
