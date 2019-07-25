@@ -1,0 +1,1 @@
+uglifyjs code.js -c -m -o code.js

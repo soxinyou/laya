@@ -1,0 +1,1 @@
+uglifyjs part1.js -c -m -o part1.js

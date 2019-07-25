@@ -1,0 +1,11 @@
+require("weapp-adapter.js");
+window.loadLib = require;
+//require("zlib.min.js");
+require("sax.js");
+require("dom.js");
+window.Parser=require("dom_parser.js");
+require("sdk_wxa.js");
+require("paysdk.js");
+require("skin.js");
+require("awyxcx.js");
+require("./code.js");

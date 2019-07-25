@@ -1,0 +1,1 @@
+uglifyjs gamemain.js -c -m -o gamemain.js

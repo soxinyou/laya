@@ -1,0 +1,1 @@
+uglifyjs gameui.js -c -m -o gameui.js

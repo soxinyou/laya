@@ -1,0 +1,24 @@
+{
+  "deviceOrientation": "portrait",
+  "showStatusBar": false,
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 30000,
+    "uploadFile": 30000,
+    "downloadFile": 30000
+  },
+  "subpackages": [
+   {
+      "name": "gamemain",
+      "root": "js/gamemain.js"
+    },
+	 {
+      "name": "gameui",
+      "root": "js/gameui.js"
+    } ,
+    {
+      "name": "part1",
+      "root": "js/part1.js"
+    }
+  ]
+}
